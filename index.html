@@ -12,10 +12,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div id="container">
-    <img src="./assets/images/background-pattern-desktop.svg" alt="">
+    <img src="./assets/images/background-pattern-desktop.svg" alt="" class="img__background">
 
     <div id="main">
       <div class="main__header">
@@ -27,30 +28,38 @@
 
       <div class="main__content">
         <ul class="faq">
-          <li>
-            <p class="faq__question">What is Frontend Mentor, and how will it help me?</p>
-            <img src="./assets/images/icon-plus.svg" alt="" class="icon__plus">
-            <img src="./assets/images/icon-minus.svg" alt="" class="icon__minus">
-            <p class="faq__answer">Frontend Mentor cung cấp các thử thách code thực tế giúp bạn luyện HTML, CSS và JavaScript. Nhờ đó bạn nâng cao kỹ năng frontend, có sản phẩm sát với dự án thực tế, và xây dựng portfolio chuyên nghiệp.</p>
-          </li>
-          <li>
-            <p class="faq__question">Is Frontend Mentor free?</p>
-            <img src="./assets/images/icon-plus.svg" alt="" class="icon__plus">
-            <img src="./assets/images/icon-minus.svg" alt="" class="icon__minus">
-            <p class="faq__answer">Có. Frontend Mentor có gói miễn phí với nhiều thử thách. Ngoài ra có gói PRO cung cấp thêm thiết kế Figma và tính năng hỗ trợ nâng cao.</p>
-          </li>
-          <li>
-            <p class="faq__question">Can I use Frontend Mentor projects in my portfolio?</p>
-            <img src="./assets/images/icon-plus.svg" alt="" class="icon__plus">
-            <img src="./assets/images/icon-minus.svg" alt="" class="icon__minus">
-            <p class="faq__answer">Hoàn toàn được. Bạn có thể đưa sản phẩm mình làm từ thử thách vào portfolio để thể hiện kỹ năng và quy trình phát triển.</p>
-          </li>
-          <li>
-            <p class="faq__question">How can I get help if I'm stuck on a challenge?</p>
-            <img src="./assets/images/icon-plus.svg" alt="" class="icon__plus">
-            <img src="./assets/images/icon-minus.svg" alt="" class="icon__minus">
-            <p class="faq__answer">Bạn có thể tham gia cộng đồng Frontend Mentor, đặt câu hỏi trong kênh #help, hoặc đọc phần gợi ý/tài liệu đi kèm thử thách.</p>
-          </li>
+          <div class="fix">
+            <li>
+              <p class="faq__question">What is Frontend Mentor, and how will it help me?</p>
+              <img src="./assets/images/icon-plus.svg" alt="" class="icon__plus">
+              <img src="./assets/images/icon-minus.svg" alt="" class="icon__minus hidden">
+            </li>
+            <p class="faq__answer hidden">Frontend Mentor cung cấp các thử thách code thực tế giúp bạn luyện HTML, CSS và JavaScript. Nhờ đó bạn nâng cao kỹ năng frontend, có sản phẩm sát với dự án thực tế, và xây dựng portfolio chuyên nghiệp.</p>
+          </div>
+          <div class="fix">
+            <li>
+              <p class="faq__question">Is Frontend Mentor free?</p>
+              <img src="./assets/images/icon-plus.svg" alt="" class="icon__plus">
+              <img src="./assets/images/icon-minus.svg" alt="" class="icon__minus hidden">
+            </li>
+            <p class="faq__answer hidden">Có. Frontend Mentor có gói miễn phí với nhiều thử thách. Ngoài ra có gói PRO cung cấp thêm thiết kế Figma và tính năng hỗ trợ nâng cao.</p>
+          </div>
+          <div class="fix">
+            <li>
+              <p class="faq__question">Can I use Frontend Mentor projects in my portfolio?</p>
+              <img src="./assets/images/icon-plus.svg" alt="" class="icon__plus">
+              <img src="./assets/images/icon-minus.svg" alt="" class="icon__minus hidden">
+            </li>
+            <p class="faq__answer hidden">Hoàn toàn được. Bạn có thể đưa sản phẩm mình làm từ thử thách vào portfolio để thể hiện kỹ năng và quy trình phát triển.</p>
+          </div>
+          <div class="fix">
+            <li>
+              <p class="faq__question">How can I get help if I'm stuck on a challenge?</p>
+              <img src="./assets/images/icon-plus.svg" alt="" class="icon__plus">
+              <img src="./assets/images/icon-minus.svg" alt="" class="icon__minus hidden">
+            </li>
+            <p class="faq__answer hidden">Bạn có thể tham gia cộng đồng Frontend Mentor, đặt câu hỏi trong kênh #help, hoặc đọc phần gợi ý/tài liệu đi kèm thử thách.</p>
+          </div>
         </ul>
       </div>
     </div>

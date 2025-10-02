@@ -25,13 +25,18 @@ body {
 #container {
     background-color: var(--purple__100);
     position: relative;
-    min-height: 700px;
+    height: 100vh;
+}
+
+.img__background {
+    height: 276px;
+    width: 100%;
+    object-fit: cover;
 }
 
 #main {
     background-color: var(--white__color);
-    width: 700px;
-    min-height: 100px;
+    width: 40vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -59,10 +64,54 @@ body {
     gap: 12px;
 }
 
-.faq__question {
-    display: inline-block;
+.faq {
+    display: flex;
+    flex-direction: column;
 }
 
-.faq__answer, .icon__minus {
+.fix {
+    border-bottom: solid 1px #d7d4d4;
+    padding: 20px 0;
+}
+
+.fix:last-child {
+    border-bottom: none;
+    padding-bottom: 8px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq__question {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.faq__question:hover {
+    color: #ad29eb;
+    cursor: pointer;
+}
+
+.faq__answer {
+    font-weight: 400;
+    padding: 10px 0;
+    margin-top: 8px;
+    opacity: 0.6;
+}
+
+.hidden {
     display: none;
+}
+
+@media (max-width: 739px) {
+    #main {
+        width: 90vw;
+    }
+
+    .img__background {
+        height: 310px;
+    }
 }
